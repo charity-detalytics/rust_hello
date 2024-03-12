@@ -1,0 +1,14 @@
+name: Python from Rust
+
+on:
+  push
+
+jobs:
+  python-from-rust:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Python from Rust
+      run: cargo run
